@@ -1,0 +1,60 @@
+@use '../ui-kit/colors' as *;
+
+.statistics-section {
+    padding-bottom: 220px;
+}
+
+.statistics-section-heading {
+    text-align: center;
+}
+
+.statistics-section-main-content {
+    width: 78%;
+    margin: 0 auto;
+}
+
+.divider-line {
+    height: 1px;
+    border: 1px solid #00000033;
+    margin-bottom: 50px;
+}
+
+.statistics-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.statistic {
+    max-width: 22%;
+    min-width: 200px;
+}
+
+.count {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.statistic-name {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+    .statistics-list {
+        justify-content: center;
+        column-gap: 50px;
+    }
+
+    .statistic > * {
+        text-align: center;
+    }
+}
+
+@media (max-width: 870px) {
+    .statistics-section-main-content {
+        width: 100%;
+    }
+}

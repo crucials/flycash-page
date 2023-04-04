@@ -1,0 +1,100 @@
+@use '../ui-kit/colors' as *;
+
+.about-section {
+    padding-bottom: 100px;
+}
+
+.about-section-main-content {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.city-photos {
+    height: 530px;
+    width: 35%;
+    min-width: 370px;
+    max-width: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.city-photo-1 {
+    position: absolute;
+    border-radius: 16px;
+    width: 79%;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    max-height: 400px;
+}
+
+.city-photo-2 {
+    position: absolute;
+    width: 88%;
+    border-radius: 16px;
+    left: 0px;
+    top: 61px;
+}
+
+.about-company {
+    width: 42%;
+    min-width: 250px;
+}
+
+.history-text {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    margin-bottom: 40px;
+}
+
+.video-link {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    font-weight: 600;
+    font-size: 2rem;
+    color: $ocean;
+
+    .right-arrow {
+        transition: transform 0.3s;
+    }
+
+    &:hover .right-arrow {
+        transform: translateX(10px);
+    }
+}
+
+@media (max-width: 900px) {
+    .about-section-main-content {
+        justify-content: center;
+
+        & > * {
+            width: 100%;
+        }
+    }
+
+    .city-photos {
+        height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .history-text {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
+    .video-link {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .city-photos {
+        min-width: 250px;
+        height: 300px;
+    }
+}

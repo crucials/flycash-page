@@ -1,0 +1,21 @@
+{
+  "name": "flycash",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.4",
+    "@types/node": "^18.15.11",
+    "sass": "^1.60.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  }
+}

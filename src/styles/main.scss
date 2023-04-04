@@ -1,0 +1,26 @@
+@use './normalize';
+
+@use './ui-kit/colors' as *;
+@use './ui-kit/components';
+@use './reusable';
+
+@use './sections/header';
+@use './sections/about';
+@use './sections/merits';
+@use './sections/statistics';
+@use './sections/newsletter';
+@use './sections/footer';
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap');
+
+* {
+    font-family: 'Raleway';
+    
+    &::selection {
+        background-color: $gold;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

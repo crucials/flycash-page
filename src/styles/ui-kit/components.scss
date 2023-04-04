@@ -1,0 +1,66 @@
+@use './colors' as *;
+
+.base-button {
+    border-radius: 8px;
+    padding: 14px 34px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.ocean-filled-button {
+    @extend .base-button;
+
+    background-color: $ocean;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: lighten($ocean, 10);
+    }
+}
+
+.gold-filled-button {
+    @extend .base-button;
+
+    background-color: $gold;
+    color: black;
+    box-shadow: 0px 2px 25px 0px #00000023;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.06);
+    }
+
+    &:active {
+        background-color: lighten($gold, 10);
+    }
+}
+
+.text-field {
+    background-color: #F2F2F2;
+    padding: 15px 24px;
+    font-size: 1.125rem;
+    border-radius: 12px;
+    transition: border-color 0.3s;
+    border: 1px solid transparent;
+
+    &::placeholder {
+        color: #BDBDBD;
+    }
+
+    &:focus {
+        border: 1px solid $gold;
+    }
+}
+
+.outlined-gold-button {
+    @extend .base-button;
+    color: black;
+    background-color: #FBCA1D33;
+    border: 1px solid $gold;
+    transition: padding 0.3s;
+
+    &:hover {
+        padding: 14px 40px;
+    }
+}

@@ -1,0 +1,63 @@
+@use '../ui-kit/colors' as *;
+
+.footer {
+    overflow: hidden;
+}
+
+.buildings-illustration {
+    display: block;
+    width: 100%;
+    min-width: 1000px;
+}
+
+.footer-main-content {
+    padding: 66px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 30px;
+    align-items: center;
+}
+
+.footer-link {
+    font-size: 1.25rem;
+    color: black;
+}
+
+.social-networks-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    row-gap: 20px;
+
+    .social-network-icon-fill {
+        fill: black;
+        transition: fill 0.25s
+    }
+
+    li:hover .social-network-icon-fill {
+        fill: $gold;
+    }
+}
+
+.footer-mobile-logo-container {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .footer-mobile-logo-container {
+        display: block;
+        width: 100%;
+    }
+
+    .footer-mobile-logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer-desktop-logo {
+        display: none;
+    }
+}
